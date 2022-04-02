@@ -1,6 +1,6 @@
 # Innovating Ear Infection Diagnostics
 
-3 python files in total:
+There are 3 python files in total:
 
 client_input.py: It acquires image from picamera and posts the data onto the defined url, where the url is produced from running the command "ngrok http 5000" in the terminal (note the command should be run in the same directory as ngrok.exe). After posting the data, it prints out the response from the server. 
 
