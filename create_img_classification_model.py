@@ -5,7 +5,8 @@
 # Created Date: May 15, 2017
 # ---------------------------------------------------------------------------
 """
-The first part contains all the work to create the image classification model. The second part performs several important statistical tests and performance tests to validate the effectiveness of the image classification model, i.e. verify that we are diagnosing ear infections accurately and rapidly. 
+The first part contains all the work to create the image classification model.
+The second part performs several important statistical tests and performance tests to validate the effectiveness of the image classification model, i.e. verify that we are diagnosing ear infections accurately and rapidly. 
 """ 
 # ---------------------------------------------------------------------------
 
