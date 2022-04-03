@@ -55,6 +55,7 @@ image_dir = 'IMAGES/'
 image_paths = [image_dir+f for f in os.listdir(image_dir) if re.search('jpg|JPG', f)]
 features = extract_features(image_paths)
 
+
 ######### Extract labels from image filenames for binary classification #########
 labels = []
 for f in image_paths:
@@ -62,6 +63,7 @@ for f in image_paths:
         labels.append('normal')
     else:
         labels.append('infected')
+
 
 ######### Classfication and performance #########
 # Prepare training and test datasets. We will use 80% of the data as the training set and 20% as the test set.
@@ -82,7 +84,7 @@ print(confusion_matrix(y_test, y_pred, labels=labels_dis))
 print("\nClassification report:")
 print(classification_report(y_test, y_pred))
 
-# binarize the labels where normal = 0, infected = 1
+# Binarize the labels where normal = 0, infected = 1
 y_pred = label_binarize(y_pred, classes=['normal','infected']) # y_score refers to y_pred
 y_test = label_binarize(y_test, classes=['normal','infected'])
 
