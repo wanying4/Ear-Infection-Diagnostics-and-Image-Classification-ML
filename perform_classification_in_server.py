@@ -1,4 +1,12 @@
-# coding: utf-8
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#----------------------------------------------------------------------------
+# Created By  : Wanying Li
+# Created Date: May 15, 2017
+# ---------------------------------------------------------------------------
+"""
+The server receives the eardrum image from Raspberry, then classifies this image using the classification model we trained and saved (which is named CNN_clf). The server sends the results back to Raspberry.""" 
+# ---------------------------------------------------------------------------
 
 import pickle
 import numpy as np

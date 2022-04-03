@@ -1,3 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#----------------------------------------------------------------------------
+# Created By  : Wanying Li
+# Created Date: May 15, 2017
+# ---------------------------------------------------------------------------
+"""
+It entails how the local server at localhost:5000 is set up. It takes a post request from localhost:5000 (where localhost:5000 is rerouted to a new URL through ngrok). The post request contains the image data, which is then saved onto the local server and classified as 'normal' or 'infect.' Lastly, this result is returned to the client.
+""" 
+# ---------------------------------------------------------------------------
+
+
 import os, os.path
 from flask import Flask, flash, request, redirect, url_for, jsonify
 import pickle
